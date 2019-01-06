@@ -5,11 +5,12 @@
     <Transition
             motion:constraintSetStart="@layout/motion_01_cl_start"
             motion:constraintSetEnd="@layout/motion_01_cl_end"
-            motion:duration="1000">
+            motion:interpolator="anticipate"
+            motion:duration="10000">
         <OnSwipe
                 motion:touchAnchorId="@+id/button"
                 motion:touchAnchorSide="right"
-                motion:dragDirection="dragRight" />
+                motion:dragDirection="dragRight"/>
     </Transition>
 
 </MotionScene>
